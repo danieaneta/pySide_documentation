@@ -28,17 +28,6 @@ You can connect as many signals as you want to a single slot, and a signal can b
 many slots as you need. It is even possible to connect a signal directly to another signal. 
 (This will emit the second signal immediately whenever the first is emitted.)
 
-Basics of a button: 
 
-import sys
-from PySide6.QtWidgets import QApplication, QPushButton
-
-
-def function():
-    print("The 'function' has been called!")
-
-app = QApplication()
-button = QPushButton("Push this button to call function.")
-button.clicked.connect(function)
-button.show()
-sys.exit(app.exec())
+Qt Designer's Signals and Slots Editing Mode: 
+https://doc.qt.io/qt-6/designer-connection-mode.html
